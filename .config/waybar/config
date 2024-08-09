@@ -1,0 +1,62 @@
+{ 
+  "spacing": 10,
+  "layer": "top",
+  "modules-left": ["tray", "clock", "river/window"],
+  "modules-center": ["river/tags"],
+  "modules-right": ["custom/media","network", "pulseaudio", "battery"],
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 12
+  },
+
+  "clock": {
+    "interval": 60,
+    "format": "{:%H:%M}",
+    "max-lenght": 25
+  },
+
+  "river/window": {
+    "format": "{}",
+    "max-length": 15,
+ },
+
+  "river/tags": {
+    "num-tags": 9
+  },
+  
+  "custom/media": {
+    "format": "{}",
+    "return-type": "json",
+    "max-length": 40,
+    "escape": true,
+    "exec": "$HOME/.config/waybar/mediaplayer.py",
+    "on-click": "playerctl play-pause",
+  },
+
+"network": {
+    "interface": "wlp0s20f3",
+    "format": "{ifname}",
+    "format-wifi": "{essid} ({signalStrength}%)  ",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗 ",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{ifname} via {gwaddr} 󰊗 ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+    "tooltip-format-ethernet": "{ifname}  ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+},
+ 
+
+  "pulseaudio": {
+      "format": "{volume}%",
+      "on-click": "pavucontrol"
+ },
+
+  "battery": {
+	  "bat": "BAT0",
+	  "interval": 1,
+	  "format": "{capacity}% {icon}  -  {time}",
+	  "format-icons": ["   ","   ","   ","   ","   "],
+	},
+}

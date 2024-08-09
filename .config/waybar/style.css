@@ -1,0 +1,67 @@
+@import "mocha.css";
+
+* {
+    font-family: MesloLGL Nerd Font;
+    font-weight: normal;
+    all: initial;
+  }
+
+window#waybar {
+  background-color: @base;
+}
+
+
+.module {
+  padding: 4px 8px 4px 8px;
+  border-radius: 5px;
+  color: @base;
+}
+
+#tray {
+  background-color: @mauve;
+}
+
+#clock {
+  background-color: @pink;
+}
+
+#window {
+  background-color: @lavender;
+}
+
+#tags button.focused {
+  background-color: @lavender;
+  border-bottom: 1px solid @lavender;
+  color: @base;
+}
+
+#tags button {
+  padding: 4px 16px 4px 16px;
+}
+
+
+#tags button.urgent {
+  background-color: @red;
+}
+
+#tags button.occupied {
+  border-bottom: 1px solid @lavender;
+  color: @base;
+}
+
+#custom-media {
+  background-color: @green;
+}
+
+#network {
+  background-color: @mauve;
+}
+
+#pulseaudio {
+  background-color: @sapphire;
+}
+
+
+#battery {
+  background-color: @mauve;
+}
