@@ -12,8 +12,8 @@ window#waybar {
 
 
 .module {
-  padding: 4px 8px 4px 8px;
-  border-radius: 5px;
+  padding: 0px 8px 0px 8px;
+  border-radius: 0px;
   color: @base;
 }
 

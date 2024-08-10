@@ -1,4 +1,5 @@
-{ 
+{
+  "reload_style_on_change": true,
   "spacing": 10,
   "layer": "top",
   "modules-left": ["tray", "clock", "river/window"],
